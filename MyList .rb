@@ -1,4 +1,8 @@
+require './MyEnumerable'
+
 class Mylist
+  include MyEnumerable
+
   def initialize(*list)
     @list = list
   end
