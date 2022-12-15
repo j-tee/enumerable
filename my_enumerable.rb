@@ -10,4 +10,12 @@ module MyEnumerable
 
     false
   end
+
+  def filter
+    result = []
+
+    each { |item| result << item if yield item }
+
+    result
+  end
 end
